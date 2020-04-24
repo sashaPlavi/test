@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li>
-                <a class="nav-link text-light " href="<?php echo ROOT_URL; ?>">Home </a>
+                <a class="nav-link text-light " href="<?php echo ROOT_URL; ?>shop.php">Home </a>
             </li>
             <li>
 

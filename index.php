@@ -4,39 +4,17 @@ require 'conf/db.php';
 require_once './models/Shop.php';
   
  $shop = new Shop;
+ $shop-> setProd($conn);
  
-$prods = $shop->getProd($conn);
 
 
 
 ?>
 <?php include('inc/header.php'); ?>
 <?php include('inc/navbar.php'); ?>
- 
-<div class=container>
-<button onClick=<?php insert($conn);?>>Show products</button>
-<div class="grid-container">
+ <h1>Welcome</h1>
 
-   
-    <?php foreach ($prods as $prod) : ?>
-   
-        <div class="bg-secondary m-3">
-            <div class="p-3">
-                <img class='img-thumbnail w-25 p-3' src='<?php echo $prod['img']; ?>' />  
-
-                <h3 class="text-light"><?php echo $prod['title']; ?> </h3>
-                <hr>
-                <div class="bg-light p-3 ">
-                <p class="text-dark">Description : <br><?php echo $prod['description']; ?> </p>
-                </div>
-               
-            </div>
-        </div>
-       
-    <?php endforeach; ?>
-</div>
-</div>
-    <?php include('inc/form.php'); ?>
+ <a href="<?php echo ROOT_URL; ?>shop.php">check out our shop </a> 
     <?php include('inc/footer.php'); ?>
 
     </html>
