@@ -3,7 +3,7 @@ require 'conf/db.php';
  require 'conf/conf.php';
 require_once './models/Shop.php';
   
- $shop = new Shop;
+ $shop = new Shop();
  $shop-> setProd($conn);
  
 

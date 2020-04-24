@@ -2,7 +2,8 @@
 require 'models/Comments.php';
 require 'conf/db.php';
 
-$comments = new Comments;
+$coms = new Comments;
+
 $msg='';
 if(filter_has_var(INPUT_POST,'submit')){
    
@@ -11,9 +12,8 @@ if(filter_has_var(INPUT_POST,'submit')){
 
     if( !empty($email) && !empty($comment)){
    
-        $comments->setComments($conn, $email,$comment );
+        $coms->setComments($conn, $email,$comment );
 
-    
 
        
 

@@ -1,9 +1,9 @@
 <?php
 require 'conf/db.php';
-require 'models/comments.php';
 require 'conf/conf.php';
+require_once 'models/comments.php';
 
-$res = new Comments;
+$res = new Comments();
 
 $coms = $res ->getCom($conn);
 
@@ -23,9 +23,9 @@ if(filter_has_var(INPUT_POST,'submit')){
     
 }
 function allow($id,$res, $conn) {
-    var_dump('bla');
+    
     $res->allowCom($conn,$id ) ; 
-    header("Refresh: 1; url=edit.php");
+    
 };
 
 ?>
@@ -65,5 +65,5 @@ function allow($id,$res, $conn) {
 <?php endforeach; ?>
    
 
-<?php include('inc/form.php'); ?>
+ 
 <?php include('inc/footer.php'); ?>
