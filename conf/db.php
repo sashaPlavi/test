@@ -8,5 +8,3 @@ $conn = mysqli_connect('localhost', 'root', 'a1234', 'shop_citrus');
 if (mysqli_connect_errno()) {
     echo 'faield to connect' . mysqli_connect_errno();
 }
-
- 
