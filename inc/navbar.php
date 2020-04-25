@@ -11,7 +11,7 @@
             </li>
             <li>
 
-                <a class="nav-link text-light" href="<?php echo ROOT_URL; ?>edit.php">Edit Comment </a> </li>
+                <a class="nav-link text-light" href="<?php echo ROOT_URL; ?>edit.php">Admin Area </a> </li>
         </ul>
     </div>
 </nav>

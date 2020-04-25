@@ -2,9 +2,9 @@
 
 class Comments {
 
-    public function setComments($conn ,$mail, $comment){
-    $sql="INSERT INTO comments(email, comment, ok )
-    VALUES ('$mail', '$comment', 'false');";
+    public function setComments($conn ,$title, $mail, $comment){
+    $sql="INSERT INTO comments(title, email, comment, ok )
+    VALUES ('$title','$mail', '$comment', 'false');";
     if (mysqli_query($conn, $sql)) {
         echo "New record created successfully";
     } else {
@@ -24,9 +24,9 @@ class Comments {
         SET ok = true
           WHERE id = '$id';";
      if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
+    //echo "New record created successfully";
     } else {
-    echo "Error: " . $sql . "" . mysqli_error($conn);
+   // echo "Error: " . $sql . "" . mysqli_error($conn);
     }
      mysqli_commit($conn);
      header("Refresh: 0; url=edit.php");

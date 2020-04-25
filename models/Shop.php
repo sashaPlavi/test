@@ -20,12 +20,10 @@ class Shop {
        
           
           if (mysqli_query($conn, $sql)) {
-              echo "New record created successfully";
-              
-           
-          } else {
-              echo "Error: " . $sql . "" . mysqli_error($conn);
-          }
+              //echo "New record created successfully";
+               } else {
+             // echo "Error: " . $sql . "" . mysqli_error($conn);
+            }
           mysqli_commit($conn);
    }
 

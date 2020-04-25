@@ -46,10 +46,11 @@ function allow($id,$res, $conn) {
      <div class="bg-secondary m-3">
      <div class="p-3 ">
      
-     <input type="text" name="id" class='form-control' value=<?php echo $com['id'] ?>>
+     <input type="text" name="id" class='form-control' value=<?php echo $com['ID'] ?>>
      <h3 class="text-light"><?php echo $com['email']; ?> </h3>
      <hr>
      <div class="bg-light p-3 ">
+           <p class="text-dark">title : <br><?php echo $com['title']; ?> </p>
            <p class="text-dark">comment : <br><?php echo $com['comment']; ?> </p>
            </div>
           
