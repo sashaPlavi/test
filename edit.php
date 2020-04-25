@@ -21,11 +21,7 @@ if (filter_has_var(INPUT_POST, 'submit')) {
     // echo  $msg;
   }
 }
-function allow($id, $res, $conn)
-{
 
-  $res->allowCom($conn, $id);
-};
 
 ?>
 
