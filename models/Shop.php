@@ -3,7 +3,7 @@
 
 class Shop
 {
-
+   /*
    public function setProd($conn)
    {
 
@@ -28,6 +28,7 @@ class Shop
       }
       mysqli_commit($conn);
    }
+   */
 
    public function getProd($conn)
    {
@@ -36,9 +37,7 @@ class Shop
 
       return $prods = mysqli_fetch_all($result, MYSQLI_ASSOC);
       //var_dump($prod);
-
       mysqli_free_result($result);
-
       mysqli_commit($conn);
    }
 }

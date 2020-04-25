@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 25, 2020 at 08:38 PM
+-- Generation Time: Apr 25, 2020 at 10:42 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -36,10 +36,6 @@ CREATE TABLE `comments` (
   `ok` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-- 
---
- 
-
 -- --------------------------------------------------------
 
 --
@@ -56,7 +52,18 @@ CREATE TABLE `shop_items` (
 --
 -- Dumping data for table `shop_items`
 --
- 
+
+INSERT INTO `shop_items` (`id`, `img`, `title`, `description`) VALUES
+(217, 'http://snaturefruits.com/wp-content/uploads/2016/03/LIMON-snature.jpg', 'lemon', 'super-mysqli-lemon'),
+(218, 'http://snaturefruits.com/wp-content/uploads/2016/03/LIMON-snature.jpg', 'lemon', 'super-mysqli-lemon'),
+(219, 'http://snaturefruits.com/wp-content/uploads/2016/03/LIMON-snature.jpg', 'lemon', 'super-mysqli-lemon'),
+(220, 'http://snaturefruits.com/wp-content/uploads/2016/03/LIMON-snature.jpg', 'lemon', 'super-mysqli-lemon'),
+(221, 'http://snaturefruits.com/wp-content/uploads/2016/03/LIMON-snature.jpg', 'lemon', 'super-mysqli-lemon'),
+(222, 'http://snaturefruits.com/wp-content/uploads/2016/03/LIMON-snature.jpg', 'lemon', 'super-mysqli-lemon'),
+(223, 'http://snaturefruits.com/wp-content/uploads/2016/03/LIMON-snature.jpg', 'lemon', 'super-mysqli-lemon'),
+(224, 'http://snaturefruits.com/wp-content/uploads/2016/03/LIMON-snature.jpg', 'lemon', 'super-mysqli-lemon'),
+(225, 'http://snaturefruits.com/wp-content/uploads/2016/03/LIMON-snature.jpg', 'lemon', 'super-mysqli-lemon');
+
 --
 -- Indexes for dumped tables
 --
@@ -81,13 +88,13 @@ ALTER TABLE `shop_items`
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `shop_items`
 --
 ALTER TABLE `shop_items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=208;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=226;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
